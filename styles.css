@@ -1,0 +1,147 @@
+/* Общие сбросы и шрифты */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header и навигация */
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1 {
+    font-size: 1.5rem;
+    color: #007acc;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    font-weight: 500;
+    padding: 10px;
+    transition: background 0.3s;
+}
+nav ul li a:hover {
+    background-color: rgba(0, 122, 204, 0.1);
+    border-radius: 4px;
+}
+
+/* Hero секция */
+#hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: #baafaf;
+    text-align: center;
+    padding: 100px 20px;
+}
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    background-color: #007acc;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background-color: #005fa3;
+}
+
+/* Секции */
+main section {
+    padding: 60px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+main h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #007acc;
+}
+#services ul {
+    list-style: disc inside;
+}
+#services li {
+    margin-bottom: 10px;
+}
+#articles article {
+    margin-bottom: 20px;
+}
+#articles h3 {
+    font-size: 1.3rem;
+}
+
+/* Контакты */
+#contact {
+    background-color: #2d266b;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #6c81e2;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+footer p {
+    color: #666;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #hero h2 {
+        font-size: 2rem;
+    }
+}
